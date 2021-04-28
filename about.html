@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("people.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black"> HOME </a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black"> ABOUT </a>
+    </div>
+    <div class="w3-col s3">
+      <a href="two-sides.html" class="w3-button w3-block w3-black"> TWO SIDES </a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block w3-black"> CONTACT </a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"> Ronobier Bhattacharya
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"> ABOUT MY TOPIC AND EXPERIENCES
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"> WHY CHOOSE THIS TO TALK ABOUT? </span></h5>
+
+      <p> 
+          The main reasons why I chose this topic to focus on are due to several factors. To start, I am a person of 
+          color and have had my encounters and experiences of racial discrimination by police officers.
+     </p>
+
+
+     <p> 
+          I have been outspoken about this issue for quite a while and have attended many protests, rallies, and group 
+          discussions within my community and I felt like it was time to branch out and see if I can reach even more 
+          people.
+     </p>
+
+     <p> 
+          Whether it is having conversations with your peers, providing interesting and insightful articles or videos 
+          to members of your community, or just actively trying to push and strive for a better, more united nation and 
+          world.
+     </p>
+
+     <p> 
+          Even at the young age of 15, I have dealt with many racist people in and around the area I live, including many 
+          police officers who have treated me and many of my other minority friends harshly and cruelly.
+     </p>
+
+      <p>
+          I can recall a time where I was with another one of my friends and we were driving around a local mall that we 
+          regularly go to. Upon leaving the parking structure, we turn onto the street right before the main road to go 
+          home.
+     </p>
+        
+      <p> 
+          As soon as we turned right, we heard sirens blare immediately. At first, we were confused as we had no idea what 
+          we did. Once he approached us, both of us had an uneasy feeling... almost as if our lives could be in danger.
+     </p>   
+
+      <p> 
+          We found out we made a rolling stop and turn when we exited the parking lot, yet someone approaching the situation 
+          would not be able to figure that out.
+     </p>
+
+      <p> 
+          Racial remarks such as "how much weed is in the car" the minute he approached us and "you two seem like the type to 
+          always get into trouble" along with never removing his hand from his holster, all added onto the already piled up 
+          feelings of fear in both of us.
+     </p>
+    
+      <p> 
+          While thankfully we were charged with nothing more than a ticket, the car ride home was silent with both of us trying
+          to process what just happened. Two 15-year-old kids could have almost lost their lives on a routine weekend visit to 
+          our local mall.
+     </p>
+
+    </div>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
